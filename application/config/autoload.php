@@ -6,7 +6,6 @@
 		'pagination',
 		'session',
 		'common',
-		'authentication',
 		'email',
 		'template',
 		'form_validation',
