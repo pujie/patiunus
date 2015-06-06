@@ -1,2 +1,2 @@
 # patiunus
-a php content management system
+a php/CI content management system
