@@ -15,6 +15,7 @@
 	$autoload['config'] = array();
 	$autoload['language'] = array();
 	$autoload['model'] = array(array(
+		'App_logs/app_log',
 		'App_settings/app_setting',
 		'Blogs/blog',
 		'Categories/category',
