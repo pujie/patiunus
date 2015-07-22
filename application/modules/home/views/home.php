@@ -1,311 +1,331 @@
-<!--A Design by W3layouts
-Author: W3layout
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
--->
-<!DOCTYPE HTML>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-<title><?php echo $websetting->webtitle;?></title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<link href='http://fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'>
-<link href="<?php echo base_url()?>themes/theme1/web/css/style.css" rel="stylesheet" type="text/css" media="all"/>
-<link rel="stylesheet" href="<?php echo base_url();?>assets/owlcarousel/js/owl.carousel.css" />
-<style type='text/css'>
-ul.gallery{
-list-style: none
-}
-ul.gallery li{
-display:inline;
-padding: 5px;
-}
-ul.gallery li:nth-child(4n):after{
-content:"\A";
-white-space:pre;
-}
-.workspace{
-text-align:center;
-}
-.gallery li span{
-	white-space:pre-line;
-}
-</style>
-
 <script type="text/javascript" src="<?php echo base_url()?>themes/theme1/web/js/jquery-1.9.0.min.js"></script>
-<script type="text/javascript" src="<?php echo base_url()?>themes/theme1/web/js/easing.js"></script>
-<script type="text/javascript" src="<?php echo base_url()?>themes/theme1/web/js/move-top.js"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Belanjaatk.com</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/3-col-portfolio.css" rel="stylesheet">
+    <link href="css/megamenu.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
+
 <body>
-	<div class="header">
-  	  		<div class="wrap">
-  	  		<?php $header_top = true;?>
-  	  		<?php if($header_top){?>
-  	  		<?php $this->load->view("header_top")?>
-  	  		<?php }?>
-  		    </div>
-  		    <div class="navigation">
-  		    	<a class="toggleMenu" href="#">Menu</a>
-					<ul class="nav">
-						<li>
-							<a href="#">Home</a>
-						</li>
-						<li  class="test">
-							<a href="#">Peralatan Perkantoran</a>
-							<ul>
-								<li>
-									<a href="#">Meja</a>
-									<ul>
-										<li><a href="#">Meja Pertemuan</a></li>
-										<li><a href="#">Meja Kerja</a></li>
-									</ul>
-								</li>
-								<li>
-									<a href="#">Rak Buku</a>
-									<ul>
-										<li><a href="#">Rak Buku Besar</a></li>
-										<li><a href="#">Rak Buku Sedang</a></li>
-									</ul>
-								</li>
-								<li>
-									<a href="#">Pemotong Kertas</a>
-									<ul>
-										<li><a href="#">Pemotong Kertas Manual</a></li>
-										<li><a href="#">Pemotong Kertas Elektronik</a></li>
-									</ul>
-								</li>
-								<li>
-									<a href="#">Mesin Laminating</a>
-									<ul>
-										<li><a href="#">Mesin Laminating #1</a></li>
-										<li><a href="#">Mesin Laminating #2</a></li>
-									</ul>
-								</li>
-							</ul>
-						</li>
-						<li>
-							<a href="#">Computers</a>
-							<ul>
-								<li>
-									<a href="#">Laptops</a>
-									<ul>
-										<li><a href="#">HP</a></li>
-										<li><a href="#">Lenova</a></li>
-										<li><a href="#">Dell</a></li>
-										<li><a href="#">All Brands</a></li>
-									</ul>
-								</li>
-								<li>
-									<a href="#">Computer Accessories</a>
-									<ul>
-										<li><a href="#">Printer Cartridges</a></li>
-										<li><a href="#">Printer Toner</a></li>
-										<li><a href="#">Printer Ribbon</a></li>
-										<li><a href="#">Flash Disk</a></li>
-										<li><a href="#">Card Reader</a></li>
-										<li><a href="#">Power Bank</a></li>
-										<li><a href="#">Cooler</a></li>
-										<li><a href="#">Mousepad</a></li>
-										<li><a href="#">Keyboard</a></li>
-										<li><a href="#">Kabel Printer</a></li>
-									</ul>
-								</li>
-							</ul>
-						</li>
-						<li>
-							<a href="#">Perlengkapan Kantor</a>
-							<ul>
-								<li>
-									<a href="#">Kertas</a>
-									<ul>
-										<li><a href="#">A4</a></li>
-										<li><a href="#">A5</a></li>
-										<li><a href="#">Envelope</a></li>
 
-									</ul>
-								</li>
-								<li>
-									<a href="#">Alat Tulis</a>
-									<ul>
-										<li><a href="#">Pena</a></li>
-										<li><a href="#">Spidol</a></li>
-										<li><a href="#">Pensil</a></li>
-										<li><a href="#">Correction Pen</a></li>
-									</ul>
-								</li>
-								<li>
-									<a href="#">Lain-lain</a>
-									<ul>
-										<li><a href="#">Stapler</a></li>
-										<li><a href="#">Clipper</a></li>
-										<li><a href="#">Post It</a></li>
-										<li><a href="#">Cutter</a></li>
-										<li><a href="#">Diary</a></li>
-										<li><a href="#">Notebook</a></li>
-										<li><a href="#">Kalkulator</a></li>
-									</ul>
-								</li>
-							</ul>
-						</li>
-						<li>
-							<a href="#">Hubungi Kami</a>
-						</li>
-					</ul>
-					 <span class="left-ribbon"> </span>
-      				 <span class="right-ribbon"> </span>
-  		    </div>
-  		    <?php $pageheader="slide";?>
-  		    <?php switch($websetting->headertype){
-  		    case "1":
-			$this->load->view("slideheader");
-			break;
-			case "0":
-			$this->load->view("staticheader");
-			break;
-			}?>
-	</div>
-</div>
-   <!------------End Header ------------>
-  <div class="main">
-      <div class="content">
-      <?php if($websetting->shownewproducts=="1"){?>
-      <?php $this->load->view("newproduct");?>
-      <?php }?>
-    	  <div class="content_bottom">
-    	    <div class="wrap">
-    	    	<div class="content-bottom-left">
-    	    		<div class="categories">
-						   <ul>
-								<h3>Browse All Categories</h3>
-								<li><a href="#">Kertas</a></li>
-								<li><a href="#">Meja kerja</a></li>
-								<li><a href="#">Computers & Electronics</a></li>
-								<li><a href="#">Alat Tulis</a></li>
-								<li><a href="#">Tinta</a></li>
-								<li><a href="#">Pemotong Kertas</a></li>
-								<li><a href="#">Kartu Nama</a></li>
-								<li><a href="#">Notebook dan Diary</a></li>
-								<li><a href="#">Lain-lain</a></li>
-						  	 </ul>
-						</div>
-						<div class="buters-guide">
-						<h3>Panduan Pembelian</h3>
-						<p><span>Kepuasan anda adalah kebahagiaan kami.</span></p>
-						<p>Sehingga kami berkomitmen memberi anda segala upaya untuk membuat pilihan terbaik dengan usaha minimal. </p>
-					  </div>
-					  <div class="add-banner">
-					  	<img src="<?php echo base_url()?>media/products/camera.png" alt="" />
-					  	<div class="banner-desc">
-					  		<h4>Electronics</h4>
-					  	    <a href="#">More Info</a>
-					  	</div>
-					  	<div class="clear"></div>
-					  </div>
-					    <div class="add-banner add-banner2">
-					  	<img src="<?php echo base_url()?>media/products/computer.png" alt="" />
-					  	<div class="banner-desc">
-					  		<h4>Computers</h4>
-					  	    <a href="#">More Info</a>
-					  	</div>
-					  	<div class="clear"></div>
-					  </div>
-    	    	</div>
-
-    	    	<div class="content-bottom-right">
-    	    	<h3>Browse All Categories</h3>
-    	    	<div class="section group"><ul class="gallery"></ul></div>
-    	    	<div class="section group group1"></div>
-    	    	<div class="section group group2"></div>
-    	    	<?php
-					if($websetting->showfrontarticles==="1"){
-						$this->load->view("front_articles");
-					}
-    	    	?>
-		      </div>
-		      <div class="clear"></div>
-		   </div>
-         </div>
-      </div>
-    </div>
-   <div class="footer">
-   	  <div class="wrap">
-			 <div class="copy_right">
-				<p>Copy rights (c). All rights Reseverd | Template by  <a href="#">mr X</a> </p>
-		   </div>
-		   <div class="footer-nav">
-		   	<ul>
-		   		<li><a href="#">Terms of Use</a> : </li>
-		   		<li><a href="#">Privacy Policy</a> : </li>
-		   		<li><a href="contact.html">Contact Us</a> : </li>
-		   		<li><a href="#">Sitemap</a></li>
-		   	</ul>
-		   </div>
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">belanjaatk.co.id</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#">Check Out</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                    <li>
+                        <a href="#">Login/Register</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
         </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav" id="menu">
+                    <li id="l1">
+                        <a id="m1">Perlengkapan Kantor</a>
+							<div class="dropdown_2columns"><!-- Begin 2 columns container -->
+								<div class="col_2">
+									<h2>Storage</h2>
+								</div>
+								<div class="col_2">
+									<img src="images/1215_75x75_collage_tbd.png">
+									<p>Filling dan Storage.</p>
+									<p>Aneka Kontainer</p>
+								</div>
+								<div class="col_2">
+									<h2>Dan berbagai perlengkapan kantor</h2>
+								</div>
+								<div class="col_1">
+									<img src="images/1215_75x75_collage_tbd.png" width="125" height="48" alt="" />
+								</div>
+								<div class="col_1">
+									<p>Dapatkan penawaran menarik.</p>
+								</div>
+							</div><!-- End 2 columns container -->
+                    </li>
+                    <li>
+                        <a href="#">Kertas</a>
+        <div class="dropdown_5columns"><!-- Begin 5 columns container -->
+
+            <div class="col_5">
+                <h2>Aneka Kertas</h2>
+            </div>
+
+            <div class="col_1">
+                <p class="black_boxx">
+                <img src="images/348037_p_cp_ltr_cs_10r_l_2014.png" width="100" />
+                Kertas A4 10 Rim.
+                </p>
+            </div>
+
+            <div class="col_1">
+                <p>
+                <img src="images/348037_p_cp_ltr_cs_10r_l_2014.png" width="100" />
+                Kertas A3 10 rim
+                </p>
+            </div>
+
+            <div class="col_1">
+                <p>
+                <img src="images/348037_p_cp_ltr_cs_10r_l_2014.png" width="100" />
+                Kertas A2 10 rim
+                </p>
+            </div>
+
+            <div class="col_1">
+                <p>
+                <img src="images/348037_p_cp_ltr_cs_10r_l_2014.png" width="100" />
+                Kertas A1 10 rim
+                </p>
+            </div>
+
+            <div class="col_1">
+                <p>
+                <img src="images/348037_p_cp_ltr_cs_10r_l_2014.png" width="100" />
+                Kertas A3 10 rim
+                </p>
+            </div>
+
+            <div class="col_5">
+                <h2>Dapatkan penawaran terbaik</h2>
+            </div>
+
+
+        </div><!-- End 5 columns container -->
+
+
+                    </li>
+                    <li>
+                        <a href="#">Toner & Cartridge</a>
+                    </li>
+                    <li>
+                        <a href="#">Perlengkapan Rumah Tangga</a>
+                    </li>
+                    <li>
+                        <a href="#">Furnitur kantor</a>
+                    </li>
+                    <li>
+                        <a href="#">Promosi</a>
+                    </li>
+                </ul>
+            </div>
+
+        <!-- Page Header -->
+        <div class="row">
+            <div class="col-md-12 portfolio-item">
+            </div>
+        </div>
+        <!-- Projects Row -->
+        <div class="row">
+            <div class="col-md-4 portfolio-item">
+            <select>
+            <option>Pilih Kategori</option>
+            <option>Perlengkapan Kantor</option>
+            <option>kertas</option>
+            <option>Toner & Cartridge</option>
+            <option>Perlengkapan Rumah Tangga</option>
+            <option>Teknologi</option>
+            <option>Furniture Kantor</option>
+            <option>Promosi</option>
+            </select><br />
+            </div>
+            <div class="col-md-4 portfolio-item">
+                <a href="#">
+                    <img class="img-responsive" src="images/1615_308x228_triple_promo_zone_rewards.jpg" alt="">
+                </a>
+                <h3>
+                    <a href="#">Kartridge HP</a>
+                </h3>
+                <p>Cash Back 20%</p>
+            </div>
+            <div class="col-md-4 portfolio-item">
+                <a href="#">
+                    <img class="img-responsive" src="images/1615_308x228_triple_promo_zone_printers.jpg" alt="">
+                </a>
+                <h3>
+                    <a href="#">Printer</a>
+                </h3>
+                <p>Bebas biaya kirim</p>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Projects Row -->
+        <div class="row">
+            <div class="col-md-4 portfolio-item">
+                <a href="#">
+                    <img class="img-responsive" src="images/1615_308x228_triple_promo_zone_office365.jpg" alt="">
+                </a>
+                <h3>
+                    <a href="#">Laptop</a>
+                </h3>
+                <p>Termasuk Bonus Software MS Office Original</p>
+            </div>
+            <div class="col-md-4 portfolio-item">
+                <a href="#">
+                    <img class="img-responsive" src="images/1615_308x228_triple_promo_zone_cleaning.jpg" alt="">
+                </a>
+                <h3>
+                    <a href="#">Aneka Pengharum Ruang</a>
+                </h3>
+                <p>Hemat hingga 45%</p>
+            </div>
+            <div class="col-md-4 portfolio-item">
+                <a href="#">
+                    <img class="img-responsive" src="images/1615_308x228_triple_promo_zone_supplies.jpg" alt="">
+                </a>
+                <h3>
+                    <a href="#">Folder dan Kontainer</a>
+                </h3>
+                <p>Hemat hingga 25%</p>
+            </div>
+        </div>
+
+        <!-- Projects Row -->
+
+        <div class="row">
+        <hr />
+            <div class="col-md-3 portfolio-item">
+                <a href="#">
+                    <img class="img-responsive" src="images/620002_p_left_angle_hp_8610_a7f64a_left.jpeg" alt="">
+                </a>
+                <h3>
+                    <a href="#">HP OfficeJet Pro<sup>&#174;</sup></a>
+                </h3>
+                <p>E-All In One Printer</p>
+            </div>
+            <div class="col-md-3 portfolio-item">
+                <a href="#">
+                    <img class="img-responsive" src="images/261663_p.jpeg" alt="">
+                </a>
+                <h3>
+                    <a href="#">BIC<sup>&#174;</sup></a>
+                </h3>
+                <p>Pena Roller Grip Emas</p>
+            </div>
+            <div class="col-md-3 portfolio-item">
+                <a href="#">
+                    <img class="img-responsive" src="images/620007_p.jpeg" alt="">
+                </a>
+                <h3>
+                    <a href="#">Nestle Pure Life<sup>&#174;</sup></a>
+                </h3>
+                <p>Air minum dalam kemasan</p>
+            </div>
+            <div class="col-md-3 portfolio-item">
+                <a href="#">
+                    <img class="img-responsive" src="images/591973_scene7.jpeg" alt="">
+                </a>
+                <h3>
+                    <a href="#">Lexar Jump Drive<sup>&#174;</sup></a>
+                </h3>
+                <p>TwistTurn USB FlashDisk 16GB </p>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <hr>
+
+        <!-- Pagination -->
+        <div class="row text-center">
+            <div class="col-lg-12">
+                <ul class="pagination">
+                    <li>
+                        <a href="#">&laquo;</a>
+                    </li>
+                    <li class="active">
+                        <a href="#">1</a>
+                    </li>
+                    <li>
+                        <a href="#">2</a>
+                    </li>
+                    <li>
+                        <a href="#">3</a>
+                    </li>
+                    <li>
+                        <a href="#">4</a>
+                    </li>
+                    <li>
+                        <a href="#">5</a>
+                    </li>
+                    <li>
+                        <a href="#">&raquo;</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <hr>
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; Belanjaatk.com 2014</p>
+                </div>
+            </div>
+            <!-- /.row -->
+        </footer>
+
     </div>
-    <script src="<?php echo base_url();?>assets/owlcarousel/js/owl.carousel.js"></script>
-    <script type="text/javascript">
-    var mydomain = "belanjaatk";
-		$(document).ready(function() {
-			$().UItoTop({ easingType: 'easeOutQuart' });
-			$.ajax({
-				url:"http://"+mydomain+"/home/getproducts/0/10",
-				dataType:"json",
-				type:"get"
-			}).done(function(data){
-				$.each(data,function(x,y){
-					if(y.alterprice==="-"){
-						$("ul.gallery").append('<li><a href="<?php echo base_url()?>media/products/'+y.image+'" title="'+y.name+'"><img src="<?php echo base_url();?>media/products/'+y.image+'" width="150" height="150" alt="'+y.name+'"></a><span class="prc">harga</span></li>');
-					}else{
-						$("ul.gallery").append('<li><a href="<?php echo base_url()?>media/products/'+y.image+'" title="'+y.name+'"><img src="<?php echo base_url();?>media/products/'+y.image+'" width="150" height="150" alt="'+y.name+'"></a><span class="prc">harga</span></li>');					}
-				});
-			}).fail(function(){
-				console.log("Cannot load data");
-			});
-			$.ajax({
-				url:"http://"+mydomain+"/home/getproducts/4/4",
-				dataType:"json",
-				type:"get"
-			}).done(function(data){
-				$.each(data,function(x,y){
-					$(".group2").append('<div class="grid_1_of_4 images_1_of_4"><h4><a href="preview.html">'+y.name+'</a></h4><a href="preview.html"><img src="<?php echo base_url()?>media/products/'+y.image+'" alt="" /></a><div class="price-details"><div class="price-number"><p><span class="rupees">Rp. '+y.sellingprice+'</span></p></div><div class="add-cart"><h4><a href="preview.html">More Info</a></h4></div><div class="clear"></div></div></div>');
-				});
-			}).fail(function(){
-				console.log("Cannot load data");
-			});
-			$.ajax({
-				url:"http://"+mydomain+"/home/getnewrelease",
-				dataType:"json",
-				type:"get",
-			}).done(function(data){
-				$.each(data,function(x,y){
-					$("#owl-demo").append('<div class="item"><img width="100px" height="100px" src="<?php echo base_url()?>media/products/'+y.image+'" alt="Owl Image"></div>');
-				});
-				$("#owl-demo").owlCarousel({
-					autoPlay: 3000, //Set AutoPlay to 3 seconds
-					items : 4,
-					itemsDesktop : [1199,3],
-					itemsDesktopSmall : [979,3]
-				});
+    <!-- /.container -->
 
-			});
-		});
+    <!-- jQuery -->
+    <script src="js/startbootstrap/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/startbootstrap/bootstrap.min.js"></script>
+	<script type="text/javascript">
+		(function($){
+			console.log("js working");
+		}(jQuery))
 	</script>
-    <a href="#" id="toTop"> </a>
-	<script src="<?php echo base_url()?>themes/theme1/web/js/jquery.openCarousel.js" type="text/javascript"></script>
-    <script type="text/javascript" src="<?php echo base_url()?>themes/theme1/web/js/navigation.js"></script>
-    <!--start owl carousel-->
-    <script src="<?php echo base_url();?>assets/owlcarousel/js/bootstrap-collapse.js"></script>
-    <script src="<?php echo base_url();?>assets/owlcarousel/js/bootstrap-transition.js"></script>
-    <script src="<?php echo base_url();?>assets/owlcarousel/js/bootstrap-tab.js"></script>
-
-    <script src="<?php echo base_url();?>assets/owlcarousel/js/google-code-prettify/prettify.js"></script>
-	<script src="<?php echo base_url();?>assets/owlcarousel/js/application.js"></script>
-	<!--end owl carousel-->
-	<!--start banner rotator-->
-    <script type="text/javascript" src="<?php echo base_url();?>assets/jssor/jssor.js"></script>
-    <script type="text/javascript" src="<?php echo base_url();?>assets/jssor/jssor.slider.js"></script>
-	<script type="text/javascript" src="<?php echo base_url();?>assets/implementjssor.js"></script>
-	<!--end banner rotator-->
 </body>
-</html>
 
+</html>
