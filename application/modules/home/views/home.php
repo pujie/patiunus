@@ -90,55 +90,44 @@
                     </li>
                     <li>
                         <a href="#">Kertas</a>
-        <div class="dropdown_5columns"><!-- Begin 5 columns container -->
-
-            <div class="col_5">
-                <h2>Aneka Kertas</h2>
-            </div>
-
-            <div class="col_1">
-                <p class="black_boxx">
-                <img src="images/348037_p_cp_ltr_cs_10r_l_2014.png" width="100" />
-                Kertas A4 10 Rim.
-                </p>
-            </div>
-
-            <div class="col_1">
-                <p>
-                <img src="images/348037_p_cp_ltr_cs_10r_l_2014.png" width="100" />
-                Kertas A3 10 rim
-                </p>
-            </div>
-
-            <div class="col_1">
-                <p>
-                <img src="images/348037_p_cp_ltr_cs_10r_l_2014.png" width="100" />
-                Kertas A2 10 rim
-                </p>
-            </div>
-
-            <div class="col_1">
-                <p>
-                <img src="images/348037_p_cp_ltr_cs_10r_l_2014.png" width="100" />
-                Kertas A1 10 rim
-                </p>
-            </div>
-
-            <div class="col_1">
-                <p>
-                <img src="images/348037_p_cp_ltr_cs_10r_l_2014.png" width="100" />
-                Kertas A3 10 rim
-                </p>
-            </div>
-
-            <div class="col_5">
-                <h2>Dapatkan penawaran terbaik</h2>
-            </div>
-
-
-        </div><!-- End 5 columns container -->
-
-
+							<div class="dropdown_5columns"><!-- Begin 5 columns container -->
+								<div class="col_5">
+									<h2>Aneka Kertas</h2>
+								</div>
+								<div class="col_1">
+									<p class="black_boxx">
+									<img src="images/348037_p_cp_ltr_cs_10r_l_2014.png" width="100" />
+									Kertas A4 10 Rim.
+									</p>
+								</div>
+								<div class="col_1">
+									<p>
+									<img src="images/348037_p_cp_ltr_cs_10r_l_2014.png" width="100" />
+									Kertas A3 10 rim
+									</p>
+								</div>
+								<div class="col_1">
+									<p>
+									<img src="images/348037_p_cp_ltr_cs_10r_l_2014.png" width="100" />
+									Kertas A2 10 rim
+									</p>
+								</div>
+								<div class="col_1">
+									<p>
+									<img src="images/348037_p_cp_ltr_cs_10r_l_2014.png" width="100" />
+									Kertas A1 10 rim
+									</p>
+								</div>
+								<div class="col_1">
+									<p>
+									<img src="images/348037_p_cp_ltr_cs_10r_l_2014.png" width="100" />
+									Kertas A3 10 rim
+									</p>
+								</div>
+								<div class="col_5">
+									<h2>Dapatkan penawaran terbaik</h2>
+								</div>
+							</div><!-- End 5 columns container -->
                     </li>
                     <li>
                         <a href="#">Toner & Cartridge</a>
@@ -154,7 +143,6 @@
                     </li>
                 </ul>
             </div>
-
         <!-- Page Header -->
         <div class="row">
             <div class="col-md-12 portfolio-item">
@@ -307,7 +295,7 @@
         <footer>
             <div class="row">
                 <div class="col-lg-12">
-                    <p>Copyright &copy; Belanjaatk.com 2014</p>
+                    <p>Copyright &copy; Belanjaatk.com ~ 2014</p>
                 </div>
             </div>
             <!-- /.row -->
