@@ -132,6 +132,74 @@ class Admin extends CI_Controller{
 		}		
 	}
 	/*end of categories*/
+	/*start of products*/
+	function products(){
+		$this->check_login();
+		$segment = $this->uri->segment(3);
+		$objs = new Product();
+		$objs->get();
+		$config['base_url'] = '<?php echo base_url();?>admin/products';
+		$config['total_rows'] = 10;//Product::getamount();	
+		$config['per_page'] = 8;
+
+		$this->pagination->initialize($config); 
+		$data = array(
+		'objs'=>$objs,
+		'files'=>get_filenames('./assets/products',FALSE)
+		);
+		$this->load->view('admin/products',$data);
+		
+	}
+	
+	function product_add(){
+		$this->check_login();
+		$this->load->view('admin/product_add');
+	}
+	
+	function product_edit(){
+		$this->check_login();
+		$id = $this->uri->segment(3);
+		$data = array('obj'=>Product::getproduct($id));
+		$this->load->view('admin/product_edit',$data);
+	}
+	
+	function product_edit_handler(){
+		$this->check_login();
+		$params = $this->input->post();
+		if(isset($params['save'])){
+			Product::edit($params);
+		}
+		redirect('admin/products');
+	}
+	
+	function product_handler(){
+		$this->check_login();
+		$params = $this->input->post();
+		if(isset($params['save'])){
+			Product::add($params);
+		}
+		redirect('admin/products');
+	}
+
+	function product_remove(){
+		$this->check_login();
+		$id = $this->uri->segment(3);
+		Product::set_active($id,'0');
+		redirect(base_url() . 'admin/products');
+	}
+
+	function product_upload_tmp(){
+		$this->check_login();
+		$uploaddir = './media/products/'; 
+		$file = $uploaddir . basename($_FILES['uploadfile']['name']); 
+		 
+		if (move_uploaded_file($_FILES['uploadfile']['tmp_name'], $file)) { 
+			echo "success"; 
+		} else {
+			echo "error";
+		}		
+	}
+	/*end of products*/
 
 	
 

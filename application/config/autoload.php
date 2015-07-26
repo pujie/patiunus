@@ -22,6 +22,7 @@
 		'Galleries/gallery',
 		'Groups/group',
 		'Kelas/kelas',
+		'Products/product',
 		'Users/user',
 		'Websettings/websetting'
 	));
