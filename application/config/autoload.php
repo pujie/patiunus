@@ -19,10 +19,10 @@
 		'App_settings/app_setting',
 		'Blogs/blog',
 		'Categories/category',
+		'Commodities/commodity',
 		'Galleries/gallery',
 		'Groups/group',
 		'Kelas/kelas',
-		'Products/product',
 		'Users/user',
 		'Websettings/websetting'
 	));

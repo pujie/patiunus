@@ -2,6 +2,16 @@ $(document).ready(function() {
 	var producttable = $('#example').dataTable( {
 		"pagingType": "full_numbers"
 	} ),thisdomain = 'http://patiunus/';
+	$.ajax({
+		url:thisdomain+'commodities/getcategories',
+		dataType:'json'
+	}).done(function(data){
+		$.each(data,function(x,y){
+			$('#productparent').append('<option>'+y.name+'</option>');
+		});
+	}).fail(function(){
+		console.log('Tidak dapat menarik Category');
+	});
 	$('#example tbody').on('click','tr .productedit',function(){
 		var thisrow = $(this).parent().parent();
 		thisrow.parent().find('tr').removeClass('selected');

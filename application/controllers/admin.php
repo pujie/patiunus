@@ -136,7 +136,7 @@ class Admin extends CI_Controller{
 	function products(){
 		$this->check_login();
 		$segment = $this->uri->segment(3);
-		$objs = new Product();
+		$objs = new Commodity();
 		$objs->get();
 		$config['base_url'] = '<?php echo base_url();?>admin/products';
 		$config['total_rows'] = 10;//Product::getamount();	
@@ -147,7 +147,7 @@ class Admin extends CI_Controller{
 		'objs'=>$objs,
 		'files'=>get_filenames('./assets/products',FALSE)
 		);
-		$this->load->view('admin/products',$data);
+		$this->load->view('admin/products/products',$data);
 		
 	}
 	

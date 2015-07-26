@@ -72,7 +72,7 @@
 						</div>
 					</div>
 					<div class="row-form clearfix">
-						<div class="span6">Ditampilkan di gallery:</div>
+						<div class="span6">Ditampilkan di halaman depan:</div>
 						<div class="span6">
 							<select>
 							<option>Ya</option>
@@ -107,7 +107,9 @@
 					<div class="row-form clearfix" id="dproductparent">
 						<div class="span6">Parent:</div>
 						<div class="span6">
-							<input type='text' id='productparent'/>
+							<select id='productparent'>
+							</select>
+							<input type='text' id='productparentx'/>
 						</div>
 					</div>
 					<div class="row-form clearfix" id="dproductparent">
@@ -125,9 +127,7 @@
 					<div class="row-form clearfix">
 						<div class="span6">Image:</div>
 						<div class="span6">
-							<p><input type='text' id='productImageAdd'/></p>
-							<p><a class="imageuploader" id="uploadimageAdd">Pilih Gambar</a></p>
-							<span id="statusAdd"></span>
+							<p><input type='file' id='productImageAdd'/></p>
 						</div>
 					</div>
 					<div id="pictureAdd" class="row-form clearfix">

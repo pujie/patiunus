@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="<?php echo base_url();?>assets/plugins/font-awesome/css/font-awesome.css" />
     <!-- CSS Theme -->
     <link rel="stylesheet" href="<?php echo base_url();?>assets/css/themes/default.css" id="style_color-header-1" />
-<!-- end of tambahan-->
+	<!-- end of tambahan-->
 	<title>Produk</title>
 	<style type="text/css" class="init">
 		.pointer{cursor:pointer}
@@ -38,6 +38,7 @@
 </head>
 
 <body class="dt-example">
+	<?php $this->load->view('admin/products/modal');?>
 <?php $this->load->view('admin/header')?>
 <!--=== Breadcrumbs ===-->
 <div class="row-fluid breadcrumbs margin-bottom-20">
